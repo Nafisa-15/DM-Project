@@ -1,7 +1,7 @@
 import pandas as pd
 from pandas.api.types import is_integer_dtype, is_numeric_dtype, is_string_dtype
 
-from config import RAW_DATA_PATH, RUN_MODE, TABLES_DIR
+from config import FAST, PROJECT_ROOT, RAW_DATA_PATH, RUN_MODE, TABLES_DIR
 
 EXPECTED_COLUMNS = [
     "city",
@@ -70,8 +70,9 @@ if __name__ == "__main__":
     if RUN_MODE == "FAST":
         print("FAST MODE - NOT FOR REPORT")
     frame = load_raw()
-    report_path = TABLES_DIR / "01_validation.csv"
-    TABLES_DIR.mkdir(parents=True, exist_ok=True)
+    out_tables = PROJECT_ROOT / "results_fast" / "tables" if FAST else TABLES_DIR
+    report_path = out_tables / f"01_validation{'_FAST' if FAST else ''}.csv"
+    out_tables.mkdir(parents=True, exist_ok=True)
     validation_report(frame).to_csv(report_path, index=False)
     print(f"validated {len(frame):,} rows, {len(frame.columns)} columns")
-    print(f"saved {report_path.relative_to(TABLES_DIR.parent.parent)}")
+    print(f"saved {report_path.relative_to(PROJECT_ROOT)}")
