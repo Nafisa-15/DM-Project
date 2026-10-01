@@ -2,3 +2,8 @@
 data/raw/
 __pycache__/
 results_fast/
+# local assistant instructions and working log (not part of the submitted project)
+CLAUDE.md
+.github/copilot-instructions.md
+PROGRESS.md
+
