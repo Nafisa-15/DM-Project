@@ -1,0 +1,9 @@
+FS-Primary: Linear Regression (regression) complete; warnings=0
+FS-Primary: Logistic Regression (classification) complete; warnings=0
+FS-Primary: Decision Tree (regression) complete; warnings=0
+FS-Primary: Decision Tree (classification) complete; warnings=0
+FS-PM25: Linear Regression (regression) complete; warnings=0
+FS-PM25: Logistic Regression (classification) complete; warnings=0
+FS-PM25: Decision Tree (regression) complete; warnings=0
+FS-PM25: Decision Tree (classification) complete; warnings=0
+saved 3,485 CV rows; 8 searches; test set not loaded

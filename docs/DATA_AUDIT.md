@@ -1,6 +1,6 @@
 # Data Audit
 
-All figures were computed from the provided CSV. Reproduce them in `notebooks/01_audit.ipynb` (Methodology, Step 2).
+> **Status: verified on 2026-10-01.** This file was written before the pipeline existed. Every number below was then recomputed from the CSV, and all of them match. They are reproduced by `src/audit.py` (outputs: `results/tables/02_*.csv`, `results/figures/02_*.png`). The city PM2.5 slopes below use all rows; the formal per-city analysis, using training data and CIs, is METHODOLOGY Step 10.
 
 ## Source
 
@@ -37,14 +37,17 @@ All figures were computed from the provided CSV. Reproduce them in `notebooks/01
 | Only PM2.5 relates to admissions | Correlation with admissions: PM2.5 0.392. AQI, PM10, NO₂, O₃, temperature, humidity and capacity lie between −0.004 and 0.002. | Low performance ceiling (R² ≈ 0.15). |
 | Pollutants are mutually independent | AQI–PM2.5 correlation is 0.003. AQI is uniform over 0–499. In real data AQI is calculated from pollutant concentrations. | AQI is kept as a proposal feature and ablated. |
 | Effect is linear and consistent | Mean admissions rise from 5.6 (lowest PM2.5 decile) to 10.6 (highest). Fitted slope: 0.0987 admissions per µg/m³ (about +1 admission per +10 µg/m³). City slopes range from 0.090 to 0.106. Delhi is 0.0986, London 0.1056. | Supports H2 and H3. |
+| The PM2.5 effect is a staircase, not a line (found 2026-10-01, training data) | Mean admissions ≈ 5.05 + 0.99 × floor(PM2.5/10): flat inside each 10 µg/m³ band, about +1 per band. It beats a straight line in CV (RMSE 3.4065 vs 3.4171); a tree splits exactly at 10, 20, …, 60. | Explains the tree's small, real advantage. Steps at round numbers are another sign of generated data; real concentration–response curves are smooth. |
 | `population_density` is random per row | Every city has the same ≈10% / 30% / 60% Rural / Suburban / Urban split. | Not a city property. Excluded from the primary set. |
 | Unbalanced sampling | Delhi 26,465; Beijing 22,064; Mexico City 13,377; Los Angeles 9,003; London 6,985; Tokyo 6,147; Cairo 2,700; São Paulo 1,748. | Stratified splits, per-city CIs, caution for small cities. |
-| Count outcome, mild overdispersion | Mean 8.05, variance 13.80. 2.0% zeros. Max 25. Admissions never exceed `hospital_capacity`. | Poisson GLM as a secondary model. Predictions clipped at 0. |
+| Count outcome, mild overdispersion | Mean 8.05, variance 13.80. 2.0% zeros. Max 25. Admissions never exceed `hospital_capacity`. | Predictions clipped at 0. (The planned Poisson GLM was dropped in the lean scope; this is stated as a limitation.) |
 | Negative values are legitimate | The only negatives are temperatures (minimum −5 °C). | No cleaning needed. A validation script asserts it. |
 
 **Conclusion.** The data behaves like a controlled benchmark in which the real signal is one linear feature plus noise. That is useful for testing whether complex models over-fit or add nothing. It is a poor source of real-world epidemiological conclusions, and the project is designed around that.
 
 ## Real-data comparison (optional, Methodology Step 2B)
+
+**Status: skipped (lean scope).** The report states that the Delhi-vs-London pollution claim can't be tested with this file. The table is kept in case Step 2B is done later.
 
 Fill only if Step 2B is done, after choosing the real reference dataset. Expected patterns are hypotheses to check, not results.
 

@@ -1,0 +1,7 @@
+{
+  "threshold": 13.0,
+  "quantile": 0.9,
+  "source": "training_rows_only",
+  "train_rows": 70791,
+  "mode": "FULL"
+}

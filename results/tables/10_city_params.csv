@@ -1,0 +1,17 @@
+model,city,n_train,best_params,cv_rmse,grid_size,mode
+Linear Regression,Beijing,17651,"{""model__alpha"": 30}",3.3696124978187543,9,FULL
+Decision Tree,Beijing,17651,"{""model__ccp_alpha"": 0.0, ""model__max_depth"": 3, ""model__min_samples_leaf"": 200}",3.3633113775520984,576,FULL
+Linear Regression,Cairo,2160,"{""model__alpha"": 30}",3.47807913941685,9,FULL
+Decision Tree,Cairo,2160,"{""model__ccp_alpha"": 0.0, ""model__max_depth"": 2, ""model__min_samples_leaf"": 200}",3.4901554649154662,576,FULL
+Linear Regression,Delhi,21172,"{""model__alpha"": 30}",3.453822431400763,9,FULL
+Decision Tree,Delhi,21172,"{""model__ccp_alpha"": 0.007650715153495301, ""model__max_depth"": 3, ""model__min_samples_leaf"": 1}",3.4461757398186044,576,FULL
+Linear Regression,London,5588,"{""model__alpha"": 30}",3.3967066672193225,9,FULL
+Decision Tree,London,5588,"{""model__ccp_alpha"": 0.015122126516730788, ""model__max_depth"": 3, ""model__min_samples_leaf"": 1}",3.3913072507789233,576,FULL
+Linear Regression,Los Angeles,7203,"{""model__alpha"": 30}",3.4013944356722936,9,FULL
+Decision Tree,Los Angeles,7203,"{""model__ccp_alpha"": 0.0, ""model__max_depth"": 3, ""model__min_samples_leaf"": 100}",3.3984716864207263,576,FULL
+Linear Regression,Mexico City,10701,"{""model__alpha"": 30}",3.451205786908919,9,FULL
+Decision Tree,Mexico City,10701,"{""model__ccp_alpha"": 0.0, ""model__max_depth"": 3, ""model__min_samples_leaf"": 200}",3.4494196374147292,576,FULL
+Linear Regression,São Paulo,1398,"{""model__alpha"": 30}",3.362067976367758,9,FULL
+Decision Tree,São Paulo,1398,"{""model__ccp_alpha"": 0.0, ""model__max_depth"": 3, ""model__min_samples_leaf"": 200}",3.380351058587851,576,FULL
+Linear Regression,Tokyo,4918,"{""model__alpha"": 10}",3.409872518109779,9,FULL
+Decision Tree,Tokyo,4918,"{""model__ccp_alpha"": 0.015182956315591559, ""model__max_depth"": 3, ""model__min_samples_leaf"": 100}",3.410459987080624,576,FULL

@@ -1,0 +1,17 @@
+city,variable,lag,autocorrelation,mode
+Beijing,pm2_5,1,-1.9413481143189627e-06,FULL
+Beijing,hospital_admissions,1,-0.0045067019418416334,FULL
+Cairo,pm2_5,1,0.011217937769344436,FULL
+Cairo,hospital_admissions,1,-0.0011057382515813272,FULL
+Delhi,pm2_5,1,-0.0010783625826368201,FULL
+Delhi,hospital_admissions,1,-0.004222971222889217,FULL
+London,pm2_5,1,0.0005979507420099179,FULL
+London,hospital_admissions,1,0.0073599139881295635,FULL
+Los Angeles,pm2_5,1,0.002978939382721456,FULL
+Los Angeles,hospital_admissions,1,0.011825681732316585,FULL
+Mexico City,pm2_5,1,0.0057979707037388905,FULL
+Mexico City,hospital_admissions,1,-0.012980596516715352,FULL
+São Paulo,pm2_5,1,0.01331725304742359,FULL
+São Paulo,hospital_admissions,1,0.04503352095840422,FULL
+Tokyo,pm2_5,1,-0.008332251749504338,FULL
+Tokyo,hospital_admissions,1,-0.007840916677445669,FULL

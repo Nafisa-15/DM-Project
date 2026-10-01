@@ -1,0 +1,16 @@
+step 10.2 city slopes: exists, skipped
+step 10.1 per-city tuning: done
+step 11 thresholds: exists, skipped
+step 12 PDP, coefficients, tree: exists, skipped
+                         model feature_set  threshold  oof_f1  oof_pr_auc
+                    Prevalence           -       -inf  0.2088      0.1166
+           Logistic Regression  FS-Primary     0.1486  0.3041      0.2387
+                 Decision Tree  FS-Primary     0.1554  0.3029      0.2299
+                           SVC  FS-Primary    -0.2012  0.3132      0.2474
+                           MLP  FS-Primary     0.1531  0.3037      0.2360
+           Logistic Regression     FS-PM25     0.1238  0.3048      0.2389
+                 Decision Tree     FS-PM25     0.5820  0.3050      0.2336
+                           SVC     FS-PM25     0.3723  0.3142      0.2488
+                           MLP     FS-PM25     0.1514  0.3040      0.2380
+Logistic Regression (balanced)  FS-Primary     0.5521  0.3040      0.2386
+training rows only (70,791); test set not loaded

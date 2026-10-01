@@ -1,0 +1,12 @@
+check,value,expected,passed,mode
+columns,12,12,True,FULL
+rows,88489,88489,True,FULL
+missing_values,0,0,True,FULL
+duplicate_rows,0,0,True,FULL
+cities,8,8,True,FULL
+population_density_values,3,3,True,FULL
+pollutants_nonnegative,True,True,True,FULL
+aqi_in_range,True,True,True,FULL
+humidity_in_range,True,True,True,FULL
+admissions_nonnegative_integer,True,True,True,FULL
+admissions_within_capacity,True,True,True,FULL

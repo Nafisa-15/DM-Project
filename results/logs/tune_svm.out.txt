@@ -1,0 +1,18 @@
+phaseA complete: FS-Primary regression
+phaseA complete: FS-Primary classification
+phaseA complete: FS-PM25 regression
+phaseA complete: FS-PM25 classification
+phaseB complete: FS-Primary regression; edge extension=False 
+phaseB complete: FS-Primary classification; edge extension=True C_low
+phaseB complete: FS-PM25 regression; edge extension=True eps_high
+phaseB complete: FS-PM25 classification; edge extension=True C_high;gamma_low
+curve complete: FS-Primary regression
+curve complete: FS-Primary classification
+curve complete: FS-PM25 regression
+curve complete: FS-PM25 classification
+final fit complete: FS-Primary regression; 20,000 rows; 6,225 support vectors
+final fit complete: FS-Primary classification; 20,000 rows; 19,991 support vectors
+final fit complete: FS-PM25 regression; 20,000 rows; 8,286 support vectors
+final fit complete: FS-PM25 classification; 20,000 rows; 15,499 support vectors
+saved results\tables and results\figures
+test set not loaded

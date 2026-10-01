@@ -1,0 +1,7 @@
+{
+  "mode": "FULL",
+  "n_test": 17698,
+  "n_train": 70791,
+  "n_boot": 1000,
+  "seed": 42
+}

@@ -1,0 +1,18 @@
+search complete: FS-Primary regression
+search complete: FS-Primary classification
+search complete: FS-PM25 regression
+search complete: FS-PM25 classification
+seed check complete: FS-Primary regression
+seed check complete: FS-Primary classification
+seed check complete: FS-PM25 regression
+seed check complete: FS-PM25 classification
+final fits complete: FS-Primary regression
+final fits complete: FS-Primary classification
+final fits complete: FS-PM25 regression
+final fits complete: FS-PM25 classification
+feature_set           task  seed_cv_rmse_mean  seed_cv_pr_auc_mean edge_note
+ FS-Primary     regression             3.4232                  NaN   lr_edge
+ FS-Primary classification                NaN               0.2352   lr_edge
+    FS-PM25     regression             3.4155                  NaN   lr_edge
+    FS-PM25 classification                NaN               0.2396   lr_edge
+trained on 70,791 training rows; test set not loaded

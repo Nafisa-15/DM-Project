@@ -1,0 +1,22 @@
+            model feature_set   rmse  rmse_ci_low  rmse_ci_high      r2
+   Mean predictor           - 3.7135       3.6754        3.7512 -0.0000
+PM2.5-only linear     FS-PM25 3.4193       3.3838        3.4603  0.1521
+Linear Regression  FS-Primary 3.4197       3.3844        3.4608  0.1519
+    Decision Tree  FS-Primary 3.4089       3.3737        3.4492  0.1573
+              SVR  FS-Primary 3.4204       3.3851        3.4616  0.1516
+              MLP  FS-Primary 3.4245       3.3895        3.4660  0.1496
+Linear Regression     FS-PM25 3.4193       3.3838        3.4603  0.1521
+    Decision Tree     FS-PM25 3.4089       3.3737        3.4492  0.1573
+              SVR     FS-PM25 3.4192       3.3837        3.4602  0.1522
+              MLP     FS-PM25 3.4171       3.3811        3.4581  0.1532
+              model feature_set  pr_auc  pr_auc_ci_low  pr_auc_ci_high
+         Prevalence           -  0.1167         0.1116          0.1216
+Logistic Regression  FS-Primary  0.2492         0.2322          0.2656
+      Decision Tree  FS-Primary  0.2382         0.2230          0.2534
+                SVC  FS-Primary  0.2493         0.2322          0.2660
+                MLP  FS-Primary  0.2474         0.2305          0.2635
+Logistic Regression     FS-PM25  0.2490         0.2322          0.2655
+      Decision Tree     FS-PM25  0.2437         0.2284          0.2592
+                SVC     FS-PM25  0.2490         0.2322          0.2655
+                MLP     FS-PM25  0.2490         0.2322          0.2655
+test set used once: 17,698 rows, 1000 bootstrap resamples

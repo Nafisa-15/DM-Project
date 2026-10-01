@@ -2,8 +2,18 @@
 data/raw/
 __pycache__/
 results_fast/
+# shared via Drive zip instead (see README)
+results/models/
+results/tables/09_test_predictions.csv
 # local assistant instructions and working log (not part of the submitted project)
 CLAUDE.md
 .github/copilot-instructions.md
 PROGRESS.md
 
+
+# local editor and OS files
+.vscode/
+.claude/
+Thumbs.db
+desktop.ini
+results/logs/*.progress.txt

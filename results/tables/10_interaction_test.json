@@ -1,0 +1,15 @@
+{
+  "interaction_wald_chi2": 15.66403757046674,
+  "df": 7,
+  "interaction_p": 0.02836940278000287,
+  "test": "Wald chi-square, HC3",
+  "delhi_vs_london_diff": 0.007527393516921656,
+  "delhi_vs_london_p_unadjusted": 0.028322730381338757,
+  "pooled_slope": 0.09897845880542157,
+  "pooled_ci": [
+    0.09728340658144953,
+    0.1006735110293936
+  ],
+  "cov_type": "HC3",
+  "mode": "FULL"
+}
